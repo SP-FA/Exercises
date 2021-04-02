@@ -25,6 +25,7 @@ bool bfs(void)
 {
     memset(dep, -1, sizeof dep);
     memset(dis, -1, sizeof dis);
+    memcpy(temp, head, sizeof head);
     queue <int>que;
     que.push(s);
     dep[s] = 0;
